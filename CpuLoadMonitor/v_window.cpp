@@ -14,6 +14,11 @@ namespace leVis
 		glfwTerminate();
 	}
 
+	bool VisWindow::shouldClose()
+	{
+		return (bool) glfwWindowShouldClose(window);
+	}
+
 	void VisWindow::initWindow()
 	{
 		glfwInit();

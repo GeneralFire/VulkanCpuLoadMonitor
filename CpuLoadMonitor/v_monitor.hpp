@@ -11,9 +11,9 @@ namespace leVis
 		static constexpr int WIDTH = 800;
 		static constexpr int HEIGHT = 600;
 
-		void run() {};
+		void run();
 
 	private:
-		VisWindow visWindow{ WIDTH, HEIGHT, "Window!" };
+		VisWindow visWindow{ WIDTH, HEIGHT, "Window!"};
 	};
 }

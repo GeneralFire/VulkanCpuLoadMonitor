@@ -1,3 +1,12 @@
-#include "v_monitor.h"
+#include "v_monitor.hpp"
 
-// namespace leVis
+namespace leVis
+{
+	void FirstApp::run()
+	{
+		while (!visWindow.shouldClose())
+		{
+			glfwPollEvents();
+		}
+	}
+}

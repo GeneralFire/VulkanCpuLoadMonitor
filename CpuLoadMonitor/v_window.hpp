@@ -15,6 +15,11 @@ namespace leVis
 		VisWindow(int w, int h, std::string windowName);
 		~VisWindow();
 
+		VisWindow(const VisWindow&) = delete;
+		VisWindow &operator=(const VisWindow&) = delete;
+
+		bool shouldClose();
+
 	private:
 		void initWindow();
 		const int width;

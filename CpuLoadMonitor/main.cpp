@@ -1,4 +1,4 @@
-#include "v_monitor.h"
+#include "v_monitor.hpp"
 
 #include <iostream>
 #include <stdexcept>
@@ -14,6 +14,14 @@ int main() {
         std::cerr << e.what() << std::endl;
         return EXIT_FAILURE;
     }
+    
+    // leVis::FirstApp app2 = app;
+    //leVis::VisWindow a = leVis::VisWindow(3, 4, "ss");
 
+    //leVis::VisWindow ab = leVis::VisWindow(3, 4, "2ss");
+
+    //a = ab;
+
+    printf("!!!!!!!");
     return EXIT_SUCCESS;
 }
