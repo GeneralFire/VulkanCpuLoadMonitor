@@ -1,7 +1,8 @@
 #pragma once
 
 #include "v_window.hpp"
-
+#include "v_device.hpp"
+#include "vis_pipeline.hpp"
 namespace leVis
 {
 
@@ -15,5 +16,15 @@ namespace leVis
 
 	private:
 		VisWindow visWindow{ WIDTH, HEIGHT, "Window!"};
+		VisDevice visDevice{ visWindow };
+		VisPipeline visPipeline{
+			visDevice,
+			FRAG_SHADER_PATH,
+			VERT_SHADER_PATH,
+			VisPipeline::defaultPipelineConfigInfo(
+				WIDTH,
+				HEIGHT)
+		};
+		
 	};
 }

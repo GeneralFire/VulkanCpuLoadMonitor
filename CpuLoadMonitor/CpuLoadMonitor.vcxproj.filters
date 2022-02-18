@@ -27,6 +27,12 @@
     <ClCompile Include="v_monitor.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="vis_pipeline.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="v_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="v_window.hpp">
@@ -38,9 +44,21 @@
     <ClInclude Include="v_monitor.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="vis_pipeline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exception_extender.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="v_device.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="simple_shader.vert">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="simple_shader.frag">
       <Filter>shaders</Filter>
     </None>
   </ItemGroup>

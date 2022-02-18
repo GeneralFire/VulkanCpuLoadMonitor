@@ -1,3 +1,4 @@
+#include "exception_extender.hpp"
 #include "v_window.hpp"
 
 
@@ -14,11 +15,6 @@ namespace leVis
 		glfwTerminate();
 	}
 
-	bool VisWindow::shouldClose()
-	{
-		return (bool) glfwWindowShouldClose(window);
-	}
-
 	void VisWindow::initWindow()
 	{
 		glfwInit();
@@ -31,6 +27,12 @@ namespace leVis
 		assert(window);
 	}
 
-	
+	void VisWindow::createWindowSurface(VkInstance instance, VkSurfaceKHR* surface)
+	{
+		if (glfwCreateWindowSurface(instance, window, nullptr, surface) != VK_SUCCESS)
+		{
+			throw_e_runtime_error("?");
+		}
+	}
 
 }
